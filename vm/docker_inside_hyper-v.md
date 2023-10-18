@@ -5,9 +5,9 @@ To use Docker inside of a Hyper-V VM, you need to enable virtualization extensio
 1. Open a PowerShell prompt as administrator on the host machine.
 2. Run the following command to enable virtualization extensions for the VM:
     
-        ```powershell
-        Set-VMProcessor -VMName <VMName> -ExposeVirtualizationExtensions $true
-        ```
+```powershell
+Set-VMProcessor -VMName <VMName> -ExposeVirtualizationExtensions $true
+```
 Replace `<VMName>` with the name of your Hyper-V VM.
 
 3. Start the VM and install Docker inside of it.
